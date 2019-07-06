@@ -1,0 +1,362 @@
+.container {
+
+    .header {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+
+        .header-logo {
+            a {
+                width: 50px;
+                height: 50px;
+                border: 1px solid blue;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            .list-item {
+                display: flex;
+                width: 50%;
+
+                li {
+                    list-style: none;
+                    padding: 0 15px;
+                    justify-content: space-between;
+                    font-weight: 500;
+                    line-height: 10px;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .media-logo {
+                display: flex;
+
+                li {
+                    border-radius: 10px;
+                    width: 20px;
+                    height: auto;
+                    border: 1px solid red;
+                }
+            }
+
+        }
+    }
+
+    .photo {
+        width: 70%;
+
+        .row {
+            margin-top: 40px;
+
+            .wrap {
+                position: relative;
+
+                h1 {
+                    position: absolute;
+                    top: 0;
+                    right: 30%;
+                    border: 1px solid green;
+
+                    .l-page-ttl__h__en {
+                        display: block;
+
+                        @media all and(min-width: 768px)and (max-width:1024px) {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .l-page-ttl__h__en {
+                        display: block;
+                    }
+                }
+
+                .figure {
+                    width: 60%;
+                    background-image: url('https://www.haco-photo.com/assets/img/service/page_ttl.jpg');
+                }
+            }
+        }
+    }
+
+
+    .l-page-content {
+        margin: 0 auto;
+        padding: 5px 2px;
+        text-align: center;
+        width: 50%;
+
+        .l-page-intro {
+            display: inline-block;
+
+            .row {
+                padding: 50px 0;
+
+                p {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .p-print-print {
+        .bg {
+            .content-inner {
+                .container {
+                    .row {
+                        .col-lg-10 {
+                            .tb-header {}
+
+                            .table-content {
+                                margin: 0 auto;
+
+                                h1 {
+                                    margin-top: 20px;
+                                    padding: 10px 0;
+                                    border-top: 1px solid pink;
+                                    border-bottom: 1px solid pink;
+                                }
+
+                                table {
+                                    thead {
+                                        tr {
+                                            th {
+                                                background-color: #787878;
+                                                color: #fff;
+                                                border: 1px solid pink;
+                                            }
+                                        }
+                                    }
+
+                                    tbody {
+                                        tr {
+                                            th {
+                                                border: 1px solid pink;
+                                                background-color: #787878;
+                                                color: #fff;
+                                            }
+
+                                            td {
+                                                padding: 10px 0;
+                                            }
+                                        }
+                                    }
+
+                                    tbody {}
+                                }
+                            }
+
+                            .ads_btn {
+                                .bg {
+                                    background-image: repeating-linear-gradient(45deg, #fff, #fff 11px, #f7f7f7 0, #f7f7f7 20px);
+
+                                    h1 {}
+
+                                    .row {
+                                        div {
+                                            border: 1px solid gray;
+                                            padding: 5px 15px;
+                                            width: 45%;
+
+                                            .ads_01 {
+                                                text-align: center;
+                                            }
+
+                                            .ads_02 {
+
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .p-print-digital {
+        .bg {
+            .content-inner-y {
+                .container {
+                    .tab-header {
+                        background-color: #e9a581;
+                        text-align: center;
+
+                        h3 {
+                            font-size: 14px;
+                            line-height: 60px;
+                            color: #fff;
+                        }
+                    }
+
+                    .row {
+                        table {
+                            td {
+                                max-width: 40%;
+                                background-color: blue;
+                            }
+
+                            th {
+                                max-width: 40%;
+                                background-color: orangered;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header__nav {
+
+        .mainNav {
+            position: relative;
+            background-color: pink;
+
+            .h-mainNav__list {
+                display: table;
+
+                li {
+                    display: table-cell;
+
+                    a {
+                        span {
+                            padding: 40px;
+                            display: inline-block;
+                        }
+
+                        &:hover {
+                            &:after {
+                                content: "";
+                                display: block;
+                                // border: 1px solid #fff;
+                                background-color: #027e7e;
+                                height: 4px;
+                            }
+                        }
+                    }
+
+                    .has-dropdown {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: #2fa8aa;
+                        width: 100%;
+
+                        .dropdown-bg {
+                            div {
+                                .nav-tab {
+                                    ul {
+                                        display: table;
+                                        margin: 0 auto;
+
+                                        li {
+                                            display: table-cell;
+                                            padding: 20px 0;
+
+                                            img {
+                                                padding: 10px 0;
+                                            }
+
+                                            &:hover {
+                                                &:after {
+                                                    display: block;
+                                                    content: '';
+                                                    border: 1px solid red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .nav-content {
+                                    text-align: center;
+                                    padding: 20px 0;
+
+                                    h3 {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .hover_menu {
+        padding: 8px;
+
+        .bg {
+            .content-inner-y {
+                .container {
+                    .row {
+                        div {
+
+                            .menu-img {
+
+                                img {}
+                            }
+
+                            .menu-content {
+                                padding: 15px 0;
+
+                                h1 {
+                                    padding: 10px 5px;
+                                }
+
+                                p {
+                                    padding: 5px 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #footer {
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+
+        .ft-top {
+
+            .ft-header {}
+
+            .ft-content {
+                .container {
+                    .row {
+                        div {
+                            padding: 0 25px;
+
+                            .flex {
+                                div {
+                                    ul {
+                                        li {
+                                            padding-bottom: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

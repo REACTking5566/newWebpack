@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Test1 from './projectSection/test1'
+import '../src/scss/common.scss';
+import '../src/scss/reset.scss';
+import '../src/scss/rwd.scss';
+import '../src/scss/index.scss';
 
 class App extends Component {
   render() {
@@ -18,8 +23,11 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
-          </a>
+               </a>
         </header>
+        <div className="projectSection">
+          <Test1></Test1>
+        </div>
       </div>
     );
   }

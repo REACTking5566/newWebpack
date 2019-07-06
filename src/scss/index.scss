@@ -1,0 +1,735 @@
+.container {
+    .header_bg {
+        .d-flex {
+            display: flex;
+            flex-wrap: none;
+            justify-content: space-between;
+            align-items: center;
+
+            .header_logo {
+                h1 {
+                    a {
+                        img {
+                            max-width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+
+            .header_nav {
+                flex-grow: 1;
+
+                ul {
+                    display: flex;
+                    // border: 1px solid red;
+                    justify-content: flex-end;
+
+                    li {
+                        padding: 5px 15px;
+                        justify-content: center;
+
+                        .insergram_icon {
+                            &:before {
+                                content: "\e93f"
+                            }
+                        }
+
+                        a {
+                            font-weight: 700;
+                            // letter-spacing: 2px;
+
+                            span {
+                                position: static;
+
+                                &:hover {
+                                    position: relative;
+                                }
+
+                                &:after {
+                                    position: absolute;
+                                    content: "";
+                                    border-bottom: 2px solid green;
+                                    width: 100%;
+                                    top: 100%;
+                                    padding-top: 10px;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header_bnr {
+                ul {
+                    display: flex;
+                    // display: inline-block;
+
+                    li {
+                        // float: left;
+                        background-color: #2db5aa;
+                        padding: 15px 10px;
+
+                        a {
+                            background-color: #2db5aa;
+
+                            img {
+                                max-width: 100px;
+                                width: 20px;
+                                display: block;
+                                margin: 0 auto;
+                                height: auto;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #index {
+        // padding: 200px;
+        width: 100%;
+
+        .hero--image {
+            position: relative;
+            background-image: url("https://kunimoto-office.com/dist/img/main/main01.jpg?v=20181221163937");
+            background-position: top center;
+            // width: 2200px;
+            min-height: 700px;
+
+            .hero--logo {
+                position: absolute;
+                left: 50%;
+                top: -20px;
+
+                img {
+                    width: 80px;
+                }
+            }
+
+
+
+            .hero--text {
+                position: absolute;
+                right: 5%;
+                top: 5%;
+
+                span {
+                    padding: 5px;
+                    background-color: #fff;
+                    font-size: 1.6rem;
+                    letter-spacing: .5rem;
+                    font-weight: 500;
+                    writing-mode: vertical-rl;
+                }
+            }
+
+            .index--gnav {
+                position: absolute;
+                left: -160px;
+                top: 80px;
+
+                nav {
+                    ul {
+                        li {
+                            line-height: 160%;
+                            margin: 25px 0;
+                            color: black;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    #consulation {
+        .active_01 {
+
+            ////在外層加ＰＡＤＤＩＮＧ之類的
+            .content_inner_y {
+
+                ////在外層加ＰＡＤＤＩＮＧ之類的
+                .container {
+                    padding: 5% 15%;
+
+                    .row {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        div {
+                            ol {
+                                position: relative;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    left: -25px;
+                                    border-left: 2px solid #2db5aa;
+                                    height: calc(100%); // height:auto;
+                                }
+
+                                li {
+                                    position: relative;
+                                    margin-bottom: 60px;
+
+                                    &:before {
+                                        position: absolute;
+                                        content: "";
+                                        border-radius: 50%;
+                                        width: 30px;
+                                        height: 30px;
+                                        background-color: #2db5aa;
+                                        color: #fff;
+                                        left: -40px;
+                                        top: -5px;
+                                    }
+
+                                    &:after {
+                                        counter-increment: flow;
+                                        content: counter(flow);
+                                        position: absolute;
+                                        width: 5px;
+                                        left: -28px;
+                                        top: 5px;
+                                        color: #fff;
+                                    }
+
+                                    h4 {
+                                        font-size: 1.05rem;
+                                        margin-bottom: 15px;
+                                    }
+
+                                    p {
+                                        margin-bottom: 15px;
+                                        font-size: .97rem;
+                                        color: #212529;
+                                        font-weight: 400;
+                                        line-height: 160%;
+                                    }
+
+                                    .btm {
+                                        line-height: 1.2rem;
+                                        margin: 10px 15px;
+                                        position: relative;
+                                        color: #444;
+                                        position: relative;
+
+                                        &:before {
+                                            content: "*";
+                                            display: block;
+                                            position: absolute;
+                                            left: -15px;
+                                            top: 1px;
+                                            font-size: .8rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #aside--case {
+        box-sizing: border-box;
+
+        .bg {
+            background-image: url('https://kunimoto-office.com/dist/img/main/bg-works.jpg?v=20181221163937');
+
+            .container-inner--more {
+                padding-top: 50px;
+
+                .container {
+                    h3 {
+
+                        color: #fff;
+                    }
+
+                    .row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0 20px;
+
+                        .cat-wrap {
+                            padding: 0 25px;
+
+                            .card {
+                                min-height: 200px;
+                                position: relative; // width: 200px;
+                                overflow: hidden;
+
+                                .card-img {
+                                    display: block;
+                                    // background-size: contain;
+                                    background-image: url("https://kunimoto-office.com/app/wp-content/uploads/2018/09/0664019e800daff2fe51fcc62948893d-1-300x300.jpg");
+                                    background-repeat: no-repeat;
+                                    width: 100%;
+                                    // height: auto;
+                                    padding-bottom: 100%;
+                                    /*这里的取值取决于图片比例*/
+                                }
+
+                                .case-cat {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: black;
+                                    padding: 10px;
+                                    text-align: center;
+                                    vertical-align: middle;
+
+                                    a {
+                                        color: #fff;
+                                        margin: 0 5px;
+                                        font-weight: 700;
+                                        font-size: 75%;
+                                    }
+                                }
+                            }
+
+                            h4 {
+                                a {
+                                    color: #fff;
+                                    font-weight: 700;
+                                    font-size: 0.85rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .btn-wrap {
+                        border: 1px solid #fff;
+                        padding: 20px 40px;
+                        position: relative;
+                        margin: 0 auto;
+                        width: 20%;
+                        text-align: center;
+
+                        a {
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 1rem;
+
+                            &:after {
+                                content: ">";
+                                position: absolute;
+                                top: 50%;
+                                // left: 100%;
+                                // left: 150%;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #index--feature {
+        .bg-gray {
+            .content-inner-more {
+                padding: 100px 0;
+
+                .container {
+                    .row {
+                        display: flex;
+
+                        .col-lg-6 {
+                            .scrt-right {
+                                img {}
+                            }
+
+                            .title-primary {
+                                line-height: 1rem;
+                                padding: 15px;
+                                border-bottom: 2px solid black;
+
+                                span {
+                                    padding: 0 8px;
+                                }
+                            }
+
+                            h4 {
+                                font-size: 1.4rem;
+                                letter-spacing: .1rem;
+                                margin-bottom: 20px;
+                                font-weight: 700;
+                            }
+
+                            .btn-wrap {
+                                margin-top: 20px;
+                                max-width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #aside_bnrs {
+        box-sizing: border-box;
+
+        .content-inner-more {
+            padding-bottom: 100px;
+            padding-top: 100px;
+
+            .container {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    div {
+                        .bnr-wrap {
+                            .card-bnr {
+                                position: relative; // border: 1px solid green;
+                                min-height: 250px;
+                                min-width: 250px;
+
+                                .card-bnr-img {
+                                    img {
+                                        width: inherit;
+                                        /*inherits width from div.aaaaa*/
+                                        max-width: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                }
+
+                                .btn-wrap {
+                                    position: absolute;
+                                    border: 1px solid red;
+                                    top: 90%;
+                                    left: 50%;
+
+                                    a {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #aside-blog {
+        .content-inner-y {
+            padding: 60px 0;
+
+            .container {
+                text-align: center;
+
+                h3 {
+                    font-size: 1.1rem;
+                    margin-bottom: 20px;
+
+                    span {
+                        position: relative;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid brown;
+                    }
+                }
+
+                .row {
+                    display: flex; // flex-wrap: wrap;
+
+                    article {
+                        display: flex;
+                        justify-content: space-around;
+
+                        .blog-list-image {
+                            width: 35%;
+
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        .blog-list-body {
+                            .blog-list-time {
+                                display: block;
+                            }
+
+                            .blog-list-title {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .btn-wrap {
+                    border: 1px solid black;
+                    padding: 20px;
+                    max-width: 20%;
+
+                    &:hover {
+                        background-color: #2db5aa;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        position: relative;
+
+                        &:after {
+                            content: ">";
+                            position: absolute;
+                            right: -20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #aside-contact {
+        .container-inner-y {
+            .container {
+
+                // width:700px;
+                // text-align:center;
+                .title-primary {
+                    span {
+                        font-weight: 500;
+                        position: relative;
+                        padding: 0 8px;
+                        font-size: 1.1rem;
+                        padding: 10px;
+                        border-bottom: 1px solid gray;
+                    }
+                }
+
+                p {
+                    font-weight: 500;
+                }
+
+                .row {
+                    //    justify-content: center;
+                    // margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+                        vertical-align: middle;
+                        flex-wrap: none;
+                        padding: 20px;
+                        border: 1px solid red;
+                        margin: 0 20px;
+
+                        a {
+                            &:before {
+                                content: "XX";
+                                display: inline-block;
+                            }
+
+                            &:after {
+                                content: ">";
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #index--seivce {
+        color: #fff;
+
+        .content-inner-more {
+            .container {
+                h3 {
+                    margin: 0 auto;
+                    margin-bottom: 80px;
+
+                    span {
+                        color: gray;
+                        text-align: center;
+                        padding: 10px 20px;
+                        border-bottom: 1px solid black;
+                    }
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap; // justify-content: space-between;
+
+                    div {
+                        margin-bottom: 10px;
+
+                        .sevice-card {
+                            background-color: gray;
+                            background: url("https://kunimoto-office.com/dist/img/index/img03.jpg?v=20181009184844") no-repeat;
+                            opacity: 0.7;
+                            background-size: cover;
+                            background-position: center;
+
+                            .card-inner {
+                                padding: 60px 30px;
+
+                                .detial {
+                                    color: #fff;
+
+                                    h3 {
+                                        font-size: 1.5rem;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+
+                                .btn-wrap {
+                                    border: 1px solid #fff;
+                                    padding: 10px 15px;
+                                    vertical-align: center;
+                                    text-align: center;
+                                    position: relative;
+
+                                    &:after {
+                                        content: "GG";
+                                        position: absolute;
+                                        width: 5px;
+                                        height: 15px;
+                                        display: inline-block; // padding-left: 20px;
+                                        right: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #form-post {
+        .content-inner-y {
+            .container {
+                .row {
+                    div {
+                        form {
+                            .formhorzin {
+                                .row {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #index--information {
+        .content-inner-y {
+            .container {
+                .tab--wrapper {
+                    .tab--nav {
+                        ul {
+                            padding: 2px;
+
+                            &:after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+
+                            li {
+                                float: left;
+                                color: #fff;
+                                padding: 10px 30px;
+                                background-color: #2db5aa;
+
+                                &:nth-child(odd) {
+                                    background-color: gray;
+                                }
+                            }
+                        }
+                    }
+
+                    .tab--content {
+                        .info--wrapper {
+                            display: flex; // justify-content: space-around;
+                            align-items: center;
+
+                            .info-detial-wrapper {
+                                width: 70%;
+
+                                .info-detial-item {
+                                    display: flex;
+                                    vertical-align: middle;
+                                    margin-bottom: 5px;
+
+                                    .info-cat {
+                                        border: 2px solid black;
+                                        padding: 5px;
+                                        margin-right: 10px;
+                                    }
+
+                                    .info-date {
+                                        margin: 0 10px;
+                                    }
+
+                                    .info-title {}
+                                }
+                            }
+
+                            .info-more {
+                                justify-content: flex-end;
+                                border: 2px solid black;
+                                padding: 25px;
+
+                                a {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        .footer-top {
+            .content-inner-y {
+                .container {
+                    .row {
+                        .col-md-6 {
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-btm {
+            h1 {
+                // margin:0 auto;
+                text-align: center;
+                margin-bottom: 10px;
+
+                a {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+
+            P {}
+        }
+    }
+}
